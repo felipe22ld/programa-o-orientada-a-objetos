@@ -1,0 +1,6 @@
+@POO_HostAddress = http://localhost:5148
+
+GET {{POO_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
