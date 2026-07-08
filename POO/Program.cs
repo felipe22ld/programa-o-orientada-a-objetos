@@ -1,23 +1,14 @@
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+namespace ProjetoAula
 {
-    app.MapOpenApi();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+            // Financeiro.Funcionario funcionario = new Financeiro.Funcionario();
+            // Financeiro.ContasReceber contasReceber = new Financeiro.ContasReceber();
+            // Cadastro.Cliente cadastro = new Cadastro.Cliente();
+            // Cadastro.Funcionario funcionario1 = new Cadastro.Funcionario();
+        }
+    }
+};
