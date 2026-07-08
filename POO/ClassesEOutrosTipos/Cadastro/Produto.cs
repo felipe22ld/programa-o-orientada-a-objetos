@@ -7,6 +7,15 @@ public class Produto
     // isso é uma propriedade
     public string Descricao { get; set; }
 
+
+    // public readonly int Estoque;
+    public int Estoque { get; }
+
+    public Produto()
+    {
+        Estoque = 10;
+    }
+
     //Comportamento da classe => método
     public void ImprimirDescricao()
     {
@@ -26,7 +35,7 @@ public class Produto
 
     public static void Executar()
     {
-//classe dinâmica, instância o obj e utiliza o método
+        //classe dinâmica, instância o obj e utiliza o método
         var produto = new Produto
         {
             Descricao = "Teclado"
@@ -36,18 +45,17 @@ public class Produto
         Console.WriteLine(produto.GetId());
         produto.ImprimirDescricao();
 
-//classe estatica, chama o método direto da classe. Não precisa instanciar o obj
+        //classe estatica, chama o método direto da classe. Não precisa instanciar o obj
         var resultado = Cadastro.Calculos.SomarNumeros(2, 3);
         Console.WriteLine(resultado);
-
-// classe => Modelo para representar um objeto no mundo real.
-//objeto => é um instancia de uma classe cria com o new.
-//propriedades => guarda informações sobre o obj.
-// metodo => executa a ação do objeto.
-//public => pode ser acessado de qualquer lugar da aplicação.
-//praivado => ´so pode ser acessado dentro da própria classe.
-//classe estática => não precisa ser instanciada, só pode ser acessada diretamente pelo nome da classe.
     }
+    // classe => Modelo para representar um objeto no mundo real.
+    //objeto => é um instancia de uma classe cria com o new.
+    //propriedades => guarda informações sobre o obj.
+    // metodo => executa a ação do objeto.
+    //public => pode ser acessado de qualquer lugar da aplicação.
+    //praivado => ´so pode ser acessado dentro da própria classe.
+    //classe estática => não precisa ser instanciada, só pode ser acessada diretamente pelo nome da classe.
 }
 
 public static class Calculos
