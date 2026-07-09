@@ -6,4 +6,12 @@ public class Cachorro : Animal
     {
         return "Cachorro é um bom amigo.";
     }
+
+    public static void ExemploAbstracao()
+    {
+        // var animal = new Animal();
+        var cachorro = new Cachorro();
+        cachorro.Nome =  "Fred";
+        cachorro.ImprimirDados();
+    }
 }

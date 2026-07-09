@@ -14,8 +14,4 @@ Produto.ExemploEncapsulamento();
 // var configuracao = new Configuracao();
 // configuracao.Host = "localhost";
 Configuracao.ExemploClasseSelada();
-
-// var animal = new Animal();
-var cachorro = new Cachorro();
-cachorro.Nome =  "Fred";
-cachorro.ImprimirDados();
+Cachorro.ExemploAbstracao();
