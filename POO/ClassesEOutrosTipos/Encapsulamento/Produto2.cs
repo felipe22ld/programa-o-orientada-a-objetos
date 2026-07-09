@@ -1,6 +1,6 @@
 namespace POO.ClassesEOutrosTipos.Encapsulamento;
 
-public class Produto
+public class Produto2
 {
     public int Id { get; private set; }
     public string Descricao { get; set; }
@@ -35,7 +35,7 @@ public class Produto
 
     public static void ExemploEncapsulamento()
     {
-        var produto = new Produto();
+        var produto = new Produto2();
         produto.Descricao = "Mouse";
         // produto.Preco = -500;
         produto.SetPreco(150);
