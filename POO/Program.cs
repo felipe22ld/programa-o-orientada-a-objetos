@@ -1,3 +1,4 @@
+using POO.ClassesEOutrosTipos.Abstracao;
 using POO.ClassesEOutrosTipos.ClasseSelada;
 using POO.ClassesEOutrosTipos.Encapsulamento;
 // using POO.ClassesEOutrosTipos.Heranca;
@@ -12,11 +13,9 @@ Produto.ExemploEncapsulamento();
 
 // var configuracao = new Configuracao();
 // configuracao.Host = "localhost";
+Configuracao.ExemploClasseSelada();
 
-// => object initialize
-var configuracao = new Configuracao
-{
-    Host = "localhost",
-};
-
-Console.WriteLine(configuracao.Host);
+// var animal = new Animal();
+var cachorro = new Cachorro();
+cachorro.Nome =  "Fred";
+cachorro.ImprimirDados();
