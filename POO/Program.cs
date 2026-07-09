@@ -3,6 +3,7 @@ using POO.ClassesEOutrosTipos.ClasseSelada;
 using POO.ClassesEOutrosTipos.Construtores;
 using POO.ClassesEOutrosTipos.Encapsulamento;
 using POO.ClassesEOutrosTipos.Heranca;
+using POO.ClassesEOutrosTipos.Record;
 using POO.ClassesEOutrosTipos.SobrecargaMetodo;
 
 // Produto.PropriedadeSomenteLeitura();
@@ -20,4 +21,25 @@ using POO.ClassesEOutrosTipos.SobrecargaMetodo;
 
 // Produto03.ExemplosConstrutores();
 
-Calculos02.ExemploSobrecarga();
+// Calculos02.ExemploSobrecarga();
+
+// var curso1 = new Curso()
+// {
+//     Id = 1,
+//     Descricao = "Curso",
+// };
+// var curso2 = new Curso()
+// {
+//     Id = 1,
+//     Descricao = "Curso",
+// };
+// Console.WriteLine(curso1 == curso2);
+// Console.WriteLine(curso1.Equals(curso2));
+var curso1 = new Curso(1,"Curso");
+ 
+// var curso2= new Curso(1,"Curso");
+var curso2 = curso1 with
+{
+Descricao = "Curso Banco de Dados"
+};
+Console.WriteLine(curso1 == curso2);
