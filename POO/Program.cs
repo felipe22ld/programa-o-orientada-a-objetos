@@ -1,13 +1,27 @@
-// using POO.ClassesEOutrosTipos.Cadastro;
+using POO.ClassesEOutrosTipos.Cadastro;
+using POO.ClassesEOutrosTipos.Heranca;
 
+// Produto.PropriedadeSomenteLeitura();
 // Produto.Executar();
 // Calculos.Executar();
 
-using POO.ClassesEOutrosTipos.Cadastro;
+var pessoaFisica = new PessoaFisica();
+pessoaFisica.Id = 1;
+pessoaFisica.Endereco = "Rua do Brasil, n 10";
+pessoaFisica.Cidade = "Rio de Janeiro";
+pessoaFisica.Cep = "010101010";
+pessoaFisica.CPF = "01234567890";
 
-Console.WriteLine("oi");
+pessoaFisica.ImprimirDados();
+pessoaFisica.ImprimirCpf();
 
-var produto = new Produto();
-produto.Descricao = "Produto Descricao";
-// produto.Estoque = 10;
-Console.WriteLine(produto.Estoque);
+var funcionario = new Funcionario();
+funcionario.Endereco = "Rua do Brasil, n 13";
+funcionario.Cidade = "SP";
+funcionario.Cep = "02342424";
+funcionario.CPF = "00000000000";
+funcionario.Matricula = "111111111";
+
+funcionario.ImprimirDados();
+funcionario.ImprimirCpf();
+funcionario.ImprimirMatricula();

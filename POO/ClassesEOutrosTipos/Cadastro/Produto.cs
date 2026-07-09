@@ -56,6 +56,16 @@ public class Produto
     //public => pode ser acessado de qualquer lugar da aplicação.
     //praivado => ´so pode ser acessado dentro da própria classe.
     //classe estática => não precisa ser instanciada, só pode ser acessada diretamente pelo nome da classe.
+
+    public static void PropriedadeSomenteLeitura()
+    {
+        Console.WriteLine("oi");
+
+        var produto = new Produto();
+        produto.Descricao = "Produto Descricao";
+        // produto.Estoque = 10;
+        Console.WriteLine(produto.Estoque);
+    }
 }
 
 public static class Calculos
