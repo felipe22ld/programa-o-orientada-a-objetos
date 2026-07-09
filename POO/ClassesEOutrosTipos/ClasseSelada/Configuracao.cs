@@ -1,6 +1,6 @@
 namespace POO.ClassesEOutrosTipos.ClasseSelada;
 
-public class Configuracao
+public sealed class Configuracao
 {
-    
+    public string Host { get; set; }
 }

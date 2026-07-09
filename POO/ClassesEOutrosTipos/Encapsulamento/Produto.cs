@@ -32,4 +32,15 @@ public class Produto
     {
         return Preco;
     }
+
+    public static void ExemploEncapsulamento()
+    {
+        var produto = new Produto();
+        produto.Descricao = "Mouse";
+        // produto.Preco = -500;
+        produto.SetPreco(150);
+        Console.WriteLine(produto.GetPreco());
+        produto.SetId(10);
+        Console.WriteLine(produto.Id);
+    }
 }
